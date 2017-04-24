@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            @import url(w3.css);
+            @import url(w3-theme-red.css);
+            img.w3-button {
+                behavior: clickable;
+            }
+        </style>
+    </head>
+    <body>
+
+    <!-- Side Navigation -->
+    <nav class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left w3-center" style="display:none" id="mySidebar">
+        <a href="#" class="w3-bar-item w3-button" id="closeSidebarBtn"><img src="X.svg" width="50px"/></a>
+        <a href="#" class="w3-bar-item w3-button"><p>Import GolemSimulation Binary</p></a>
+        <a href="#" class="w3-bar-item w3-button"><p>Build GolemSimulation Config File</p></a>
+        <a href="#" class="w3-bar-item w3-button"><p>Run GolemSimulation</p></a>
+    </nav>
+
+    <!-- Header -->
+    <header class="w3-container w3-theme w3-padding" id="myHeader">
+        <img src="bars.svg" width="50px" class="w3-xlarge w3-button w3-theme" id="sidebarBtn"/>
+        <div class="w3-center">
+            <p>Configuration File Builder and Binary Executer</p>
+            <br>
+            <h1 class="w3-xxxlarge">GolemRun</h1>
+        </div>
+    </header>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-theme-dark">
+        <p>Powered by w3.css</p>
+    </footer>
+
+    <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+    <script type="text/tiscript">
+        // Side navigation
+        $(#sidebarBtn).onClick = function () {
+            var x = self.$(#mySidebar);
+            x.style.set {
+                width: "100%",
+                fontSize: "40px",
+                display: "block"
+            };
+        }
+        $(#closeSidebarBtn).onClick = function () {
+            var x = self.$(#mySidebar);
+            x.style.set {
+                display: "none"
+            };
+        }
+    </script>
+
+    </body>
+</html>
